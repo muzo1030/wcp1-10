@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+ 
+header {
+  height: 70px;
+  background-color: #EC715F;
+}
+nav {
+  width: 1024px;
+  margin:0 auto;
+  text-align: right;
+}
+.nav-image {
+  float: left;
+  height: 70px;
+}
+.nav-list {
+  padding-top: 25px;
+}
+.nav-list-item {
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 30px;
+}
+ 
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover; /* 縦横比を維持したまま背景の表示領域を覆うように表示 */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+.main-visual-content{
+  width: 100%;
+  height: 650px;
+  text-align: center; /* 文字を真ん中に寄せる */
+  padding-top: 200px; /* 上側の内側の余白で垂直方向の位置を調整 */
+}
+.main-visual-text {
+  color: #FAFAFA; /* 文字色を白に変更 */
+  font-size: 64px;
+}
+.main-visual-name{
+  margin-top: 10px; /* 上側の外側の余白 */
+  color: #FAFAFA; /* 文字色を白に変更 */
+  font-size: 20px;
+}
+ 
+main {
+  width: 920px;
+  margin: 0 auto; /* 箱の中央寄せ */
+  padding: 70px 0; /* 上下に70px、左右に0pxの枠の内側の余白 */
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #ECEFF1;
+}
+.portfolio-all {
+    margin: 0 auto; /* 箱の中央寄せ */
+    width: 920px;
+}
+.portfolio-content1{
+  text-align: center; /* 文字を真ん中に寄せる */
+  padding-top: 90px; /* 上側の内側の余白で垂直方向の位置を調整 */
+  margin: 0 auto; 
+}
+.portfolio-content2{
+  text-align: center; /* 文字を真ん中に寄せる */
+  padding-top: 30px; /* 上側の内側の余白で垂直方向の位置を調整 */
+  margin: 0 auto; 
+}
+.portfolio-text {
+  color: #000000; /* 文字色を白に変更 */
+  font-size: 32px;
+  text-align: center;
+}
+.portfolio-line {
+  border-bottom: 3px solid #EC715F;
+  width: 70px;
+  padding-top: 8px;
+  text-align: center;
+  margin: 0 auto;
+}
+.portfolio-name {
+  color: #000000; /* 文字色を白に変更 */
+  font-size: 16px;
+  text-align: center;
+}
+.portfolio-item {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+.portfolio-box {
+  float: left;
+  width: 300px;
+  height: 250px;
+  margin: 5px 5px;
+  background-size: cover;
+  background-position: center;
+  }
+
+.portfolio-box:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+  }
+.portfolio-box:nth-child(2) {
+  background-image: url(img/websuku.png);
+  }
+.portfolio-box:nth-child(3) {
+  background-image: url(img/write.jpg);
+  }
+.portfolio-box:nth-child(4) {
+  background-image: url(img/webcamp.png);
+  }
+.portfolio-box:nth-child(5) {
+  background-image: url(img/talk.jpg);
+  }
+.portfolio-box:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+  }
+
+
+
+
+
+
+
+.blog-headline {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+.sidebar {
+  width: 230px;
+  float: left;
+}
+ 
+footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #EC715F;
+}
+.footer-text {
+  font-size: 16px;
+  color: #FAFAFA;
+}
