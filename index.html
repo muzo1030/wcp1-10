@@ -2,11 +2,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- CSSファイルの読み込み -->
   <link rel="stylesheet" href="style.css">
   <title>My Site</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
+
   <!-- header -->
   <header>
     <nav>
@@ -17,10 +20,13 @@
         <li class="nav-list-item">Profile</li>
         <li class="nav-list-item">Contact</li>
       </ul>
+      <div class="social hamburger">
+        <i class="fa fa-bars fa-large3 fa-white" aria-hidden="true"></i>
+      </div>
     </nav>
   </header>
 
-   <!-- main-visual用のdiv -->
+  <!-- main-visual用のdiv -->
   <div class="main-visual">
     <div class="main-visual-content">
       <p class="main-visual-text">
@@ -35,33 +41,163 @@
   <!-- portfolio用のdiv -->
   <div class="portfolio">
     <div class="portfolio-all">
-      <div class="portfolio-content1">
-        <p class="portfolio-text">
-        Portfolio
+      <div class="main-content1">
+        <p class="main-text">Portfolio</p>
+      </div>
+      <div class="main-line"></div>
+      <div class="main-content2">
+        <p class="main-text2">
+          It is a long established fact that a reader will be distracted by the readable<br>
+          content of a page when looking at its layout.<br>
+          The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters<br>
         </p>
       </div>
-      <div class="portfolio-line"></div>
-      <div class="portfolio-content2">
-        <p class="portfolio-name">
-         It is a long established fact that a reader will be distracted by the readable<br>
-         content of a page when looking at its layout.<br>
-         The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters<br>
-        </p>
-      </div>
-      <div class="portfolio-item clearfix">
-        <div class="portfolio-box"></div>
-        <div class="portfolio-box"></div>
-        <div class="portfolio-box"></div>
-        <div class="portfolio-box"></div>
-        <div class="portfolio-box"></div>
-        <div class="portfolio-box"></div>
+      <div class="main-item clearfix">
+        <div class="portfolio-box portfolio-image1"></div>
+        <div class="portfolio-box portfolio-image2"></div>
+        <div class="portfolio-box portfolio-image3"></div>
+        <div class="portfolio-box portfolio-image4"></div>
+        <div class="portfolio-box portfolio-image5"></div>
+        <div class="portfolio-box portfolio-image6"></div>
       </div>
     </div>
   </div>
- 
+
+  <!-- feature用のdiv -->
+  <div class="feature">
+    <div class="feature-all">
+      <div class="main-content1">
+        <p class="main-text">Feature</p>
+      </div>
+      <div class="main-line"></div>
+      <div class="main-content2">
+        <p class="main-text2">
+          It is a long established fact that a reader will be distracted by the readable<br>
+          content of a page when looking at its layout.<br>
+          The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters<br>
+        </p>
+      </div>
+      <div class="main-item clearfix">
+        <div class="social feature-box">
+          <div class="social-box">
+            <i class="fa fa-code  fa-large" aria-hidden="true"></i>
+          </div>
+          <p class="main-text3">Strength1</p>
+          <p class="main-text4">
+            Contrary to popular belief,Lorem lpsum is not simply random text.It has roots in a piece of classical Latin literature<br>
+            from 45 BC,making it over 2000 years old.Richard McClintock,a Latin<br>
+            professor at Hampden-Sydney College in Virginia,looked up one of the more obscure Latin words,consectertur<br>
+          </p>
+        </div>
+        <div class="social feature-box">
+          <div class="social-box">
+            <i class="fa fa-desktop fa-large" aria-hidden="true"></i>
+          </div>
+          <p class="main-text3">Strength2</p>
+          <p class="main-text4">
+            Contrary to popular belief,Lorem lpsum is not simply random text.It has roots in a piece of classical Latin literature<br>
+            from 45 BC,making it over 2000 years old.Richard McClintock,a Latin<br>
+            professor at Hampden-Sydney College in Virginia,looked up one of the more obscure Latin words,consectertur<br>
+          </p>
+        </div>
+        <div class="social feature-box">
+          <div class="social-box">
+            <i class="fa fa-cogs fa-large" aria-hidden="true"></i>
+          </div>
+          <p class="main-text3">Strength3</p>
+          <p class="main-text4">
+            Contrary to popular belief,Lorem lpsum is not simply random text.It has roots in a piece of classical Latin literature<br>
+            from 45 BC,making it over 2000 years old.Richard McClintock,a Latin<br>
+            professor at Hampden-Sydney College in Virginia,looked up one of the more obscure Latin words,consectertur<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile用のdiv -->
+  <div class="profile">
+    <div class="profile-all">
+      <div class="main-content1">
+        <p class="main-text">Profile</p>
+      </div>
+      <div class="main-line"></div>
+      <div class="main-content2">
+        <p class="main-text2">
+          It is a long established fact that a reader will be distracted by the readable<br>
+          content of a page when looking at its layout.<br>
+          The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters<br>
+        </p>
+      </div>
+      <div class="main-item clearfix">
+        <div class="profile-box1">
+          <img class="profile-image" src="img/my-icon.jpg">
+        </div>
+        <div class="profile-box2">
+          <p class="profile-text1">MyName</p>
+          <p class="profile-text3">
+            Contrary to popular belief,Lorem lpsum is not simply random text.It has roots in a piece of classical Latin literature
+            from 45 BC,making it over 2000 years old.Richard McClintock,a Latin
+            professor at Hampden-Sydney College in Virginia,looked up one of the more obscure Latin words,consectertur
+          </p>
+          <p class="profile-text2">MySkills</p>
+          <p class="profile-text3">
+            HTML/CSS/JavaScript/JQuery/PhotoShop
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact用のdiv -->
+  <div class="contact">
+    <div class="contact-all">
+      <div class="main-content1">
+        <p class="main-text">Contact</p>
+      </div>
+      <div class="main-line"></div>
+      <div class="main-content2">
+        <p class="main-text2">
+          It is a long established fact that a reader will be distracted by the readable<br>
+          content of a page when looking at its layout.<br>
+          The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters<br>
+        </p>
+      </div>
+      <div class="main-item clearfix">
+        <div class="contact-box1">
+          <!--MailとTellの位置調整div  -->
+          <div class="contact-fix1 clearfix">
+            <p class="contact-text1">Mail</p>
+            <p class="contact-text2">xxx@xxx.com</p>
+            <p class="contact-text3">Tell</p>
+            <p class="contact-text2">000-0000-0000</p>
+          </div>
+        </div>
+        <div class="contact-box2">
+          <!--SNSの位置調整div  -->
+          <div class="contact-fix2 clearfix">
+            <p class="contact-text1">SNS</p>
+            <div class="social contact-case clearfix">
+              <div class="social-box2">
+                <i class="fa fa-facebook fa-large2" aria-hidden="true"></i>
+              </div>
+              <div class="social-box2">
+                <i class="fa fa-twitter fa-large2" aria-hidden="true"></i>
+              </div>
+              <div class="social-box2">
+                <i class="fa fa-instagram fa-large2" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <!-- footer -->
-  <footer>
-    <p class="footer-text">© 2017 WebCamp</p>
-  </footer>
+<footer>
+  <p class="footer-text">© 2017 WebCamp</p>
+</footer>
 </body>
 </html>

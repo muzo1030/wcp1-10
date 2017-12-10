@@ -1,159 +1,630 @@
 * {
+  /* 初期化設定 */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
- 
 .clearfix:after {
   content:"";
   display:block;
   clear:both;
 }
- 
+
+
 header {
-  height: 70px;
-  background-color: #EC715F;
+  height: 70px; /* 高さ */
+  background-color: #EC715F; /* 背景をピンクに変更 */
 }
 nav {
-  width: 1024px;
-  margin:0 auto;
-  text-align: right;
+  width: 1024px; /* 横幅 */
+  margin:0 auto; /* 箱の中央寄せ */
 }
 .nav-image {
-  float: left;
-  height: 70px;
+  float: left; /* 要素を左揃えで並べる */
+  height: 70px; /* 高さ */
 }
 .nav-list {
-  padding-top: 25px;
+  padding-top: 25px; /* 上に余白を作成 */
+  text-align: right; /* 文字を右に寄せる */
 }
 .nav-list-item {
-  list-style: none;
-  color: #fff;
+  list-style: none; /* ・表示を無効にする */
   font-size: 16px;
-  display: inline-block;
-  margin: 0 30px;
+  color: #FAFAFA; /* 文字色を白に変更 */
+  display: inline-block; /* 要素を横並びに */
+  margin: 0 30px;/* 文字間に余白を作成 */
 }
- 
+.hamburger {
+  display: none; /* メニュの非表示 */
+}
+
+
 .main-visual {
-  width: 100%;
-  height: 650px;
-  background-image: url(img/mv.png);
+  width: 100%; /* 横幅 */
+  height: 650px; /* 高さ */
+  background-image: url(img/mv.png); /* 背景画像の配置 */
   background-size: cover; /* 縦横比を維持したまま背景の表示領域を覆うように表示 */
   background-position: center; /* 背景画像を中央に配置 */
 }
 .main-visual-content{
-  width: 100%;
-  height: 650px;
+  width: 100%; /* 横幅 */
+  height: 650px; /* 高さ */
   text-align: center; /* 文字を真ん中に寄せる */
   padding-top: 200px; /* 上側の内側の余白で垂直方向の位置を調整 */
 }
 .main-visual-text {
   color: #FAFAFA; /* 文字色を白に変更 */
-  font-size: 64px;
+  font-size: 64px; /* 文字の大きさ変更 */
 }
 .main-visual-name{
   margin-top: 10px; /* 上側の外側の余白 */
   color: #FAFAFA; /* 文字色を白に変更 */
-  font-size: 20px;
-}
- 
-main {
-  width: 920px;
-  margin: 0 auto; /* 箱の中央寄せ */
-  padding: 70px 0; /* 上下に70px、左右に0pxの枠の内側の余白 */
+  font-size: 20px; /* 文字の大きさ変更 */
 }
 
+
 .portfolio {
-  width: 100%;
-  background-color: #ECEFF1;
+  width: 100%; /* 横幅 */
+  background-color: #ECEFF1; /* 背景をグレーに変更 */
 }
 .portfolio-all {
     margin: 0 auto; /* 箱の中央寄せ */
-    width: 920px;
+    width: 920px; /* 横幅 */
 }
-.portfolio-content1{
+.main-content1{
   text-align: center; /* 文字を真ん中に寄せる */
   padding-top: 90px; /* 上側の内側の余白で垂直方向の位置を調整 */
-  margin: 0 auto; 
+  margin: 0 auto; /* 箱の中央寄せ */
 }
-.portfolio-content2{
+.main-content2{
   text-align: center; /* 文字を真ん中に寄せる */
   padding-top: 30px; /* 上側の内側の余白で垂直方向の位置を調整 */
-  margin: 0 auto; 
+  margin: 0 auto; /* 箱の中央寄せ */
 }
-.portfolio-text {
-  color: #000000; /* 文字色を白に変更 */
-  font-size: 32px;
-  text-align: center;
+.main-text {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 32px; /* 文字の大きさ変更 */
+  text-align: center; /* 文字を真ん中に寄せる */
 }
-.portfolio-line {
-  border-bottom: 3px solid #EC715F;
-  width: 70px;
-  padding-top: 8px;
-  text-align: center;
-  margin: 0 auto;
+.main-line {
+  border-bottom: 3px solid #EC715F; /* 文字に赤の下線を設定 */
+  width: 70px; /* 横幅 */
+  padding-top: 8px; /* 上側の内側の余白で垂直方向の位置を調整 */
+  text-align: center; /* 文字を真ん中に寄せる */
+  margin: 0 auto; /* 箱の中央寄せ */
 }
-.portfolio-name {
-  color: #000000; /* 文字色を白に変更 */
-  font-size: 16px;
-  text-align: center;
+.main-text2 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 16px; /* 文字の大きさ変更 */
+  text-align: center; /* 文字を真ん中に寄せる */
 }
-.portfolio-item {
-  padding-top: 30px;
-  margin: 0 auto;
+.main-item {
+  padding-top: 30px; /* 上側の内側の余白で垂直方向の位置を調整 */
+  padding-bottom: 90px; /* 下側の内側の余白で垂直方向の位置を調整 */
+  margin: 0 auto; /* 箱の中央寄せ */
 }
 .portfolio-box {
-  float: left;
-  width: 300px;
-  height: 250px;
-  margin: 5px 5px;
-  background-size: cover;
-  background-position: center;
-  }
-
-.portfolio-box:nth-child(1) {
-  background-image: url(img/sketch.jpg);
-  }
-.portfolio-box:nth-child(2) {
-  background-image: url(img/websuku.png);
-  }
-.portfolio-box:nth-child(3) {
-  background-image: url(img/write.jpg);
-  }
-.portfolio-box:nth-child(4) {
-  background-image: url(img/webcamp.png);
-  }
-.portfolio-box:nth-child(5) {
-  background-image: url(img/talk.jpg);
-  }
-.portfolio-box:nth-child(6) {
-  background-image: url(img/webcamp-mother.png);
-  }
-
-
-
-
-
-
-
-.blog-headline {
-  border-bottom: 8px solid #f7f7f7;
-  text-align: center;
-  line-height: 0.6;
+  float: left; /* 要素を左揃えで並べる */
+  width: 300px; /* 横幅 */
+  height: 250px; /* 高さ */
+  background-size: cover; /* 縦横比を維持したまま背景の表示領域を覆うように表示 */
+  background-position: center; /* 背景画像を中央に配置 */
 }
-.sidebar {
-  width: 230px;
-  float: left;
+.portfolio-image1 {
+  background-image: url(img/sketch.jpg);/* 背景画像の配置 */
+  margin: 0 10px 0 0; /* 内側の余白で画像の位置調整 */
+  }
+.portfolio-image2 {
+  background-image: url(img/websuku.png); /* 背景画像の配置 */
+  }
+.portfolio-image3 {
+  background-image: url(img/write.jpg); /* 背景画像の配置 */
+  margin: 0 0 0 10px; /* 内側の余白で画像の位置調整 */
+  }
+.portfolio-image4 {
+  background-image: url(img/webcamp.png); /* 背景画像の配置 */
+  margin: 10px 10px 0 0; /* 内側の余白で画像の位置調整 */
+  }
+.portfolio-image5 {
+  background-image: url(img/talk.jpg); /* 背景画像の配置 */
+  margin: 10px 10px 0 0; /* 内側の余白で画像の位置調整 */
+  }
+.portfolio-image6 {
+  background-image: url(img/webcamp-mother.png); /* 背景画像の配置 */
+  margin: 10px 0 0 0; /* 内側の余白で画像の位置調整 */
+  }
+
+
+.feature {
+  width: 100%; /* 横幅 */
 }
- 
+.feature-all {
+    margin: 0 auto; /* 箱の中央寄せ */
+    width: 980px; /* 横幅 */
+}
+.feature-box {
+  float: left; /* 要素を左揃えで並べる */
+  margin: 0 auto; /* 箱の中央寄せ */
+  width: 320px; /* 横幅 */
+}
+.feature-box:nth-child(even) {
+  margin: 0 10px; /* 2番目の箱の空白部分の位置変更 */
+}
+.social-box {
+text-align: center; /* 文字を真ん中に寄せる */
+}
+.fa-large
+{
+  font-size: 60px ; /* 文字の大きさ変更 */
+}
+.main-text3 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 20px; /* 文字の大きさ変更 */
+  text-align: center; /* 文字を真ん中に寄せる */
+  padding: 10px 0; /* 文字間の空白部分の位置変更 */
+}
+.main-text4 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 16px; /* 文字の大きさ変更 */
+  text-align: left; /* 文字を左に寄せる */
+}
+
+
+.profile {
+  width: 100%; /* 横幅 */
+  background-color: #ECEFF1; /* 背景をグレーに変更 */
+}
+.profile-all {
+    margin: 0 auto; /* 箱の中央寄せ */
+    width: 1024px; /* 横幅 */
+}
+.profile-box1 {
+  width: 512px; /* 横幅 */
+  float:left; /* 要素を左揃えで並べる */
+  text-align: center; /* 文字を真ん中に寄せる */
+}
+.profile-image {
+width: 250px; /* 横幅 */
+height: 250px;  /* 高さ */
+border-radius: 400px /* 画像を丸く表示させる */
+}
+.profile-box2 {
+  width: 512px; /* 横幅 */
+  float:left; /* 要素を左揃えで並べる */
+}
+.profile-text1 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 20px; /* 文字の大きさ変更 */
+  text-align: left; /* 文字を左に寄せる */
+  padding: 0 0 5px 0; /* 内側の余白で文字間の位置調整 */
+}
+.profile-text2 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 20px; /* 文字の大きさ変更 */
+  text-align: left; /* 文字を左に寄せる */
+  padding: 8px 0 5px 0; /* 内側の余白で文字間の位置調整 */
+}
+.profile-text3 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 16px; /* 文字の大きさ変更 */
+  text-align: left; /* 文字を左に寄せる */
+}
+
+
+.contact {
+  width: 100%; /* 横幅 */
+}
+.contact-all {
+    margin: 0 auto; /* 箱の中央寄せ */
+    width: 800px; /* 横幅 */
+}
+.contact-box1 {
+  width: 400px; /* 横幅 */
+  float:left; /* 要素を左揃えで並べる */
+  text-align: center; /* 文字を真ん中に寄せる */
+  margin: 0 auto; /* 箱の中央寄せ */
+}
+.contact-fix1 {
+  width: 130px; /* 横幅 */
+  margin: 0 auto; /* 箱の中央寄せ */
+}
+.contact-text1 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 20px; /* 文字の大きさ変更 */
+  text-align: left; /* 文字を左に寄せる */
+  padding: 0 0 5px 0; /* 内側の余白で文字間の位置調整 */
+}
+.contact-text2 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 16px; /* 文字の大きさ変更 */
+  border-bottom: 1px solid; /* 文字に下線を引く */
+  text-align: left; /* 文字を左に寄せる */
+}
+.contact-text3 {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 20px; /* 文字の大きさ変更 */
+  text-align: left;/* 文字を左に寄せる */
+  padding: 20px 0 5px 0; /* 内側の余白で文字間の位置調整 */
+}
+.contact-box2 {
+  width: 400px; /* 横幅 */
+  float: left; /* 要素を左揃えで並べる */
+}
+.contact-fix2 {
+  width: 215px; /* 横幅 */
+  margin: 0 auto; /* 箱の中央寄せ */
+}
+.contact-case {
+  width: 400px; /* 横幅 */
+}
+.fa-large2 {
+  font-size: 50px ; /* 文字の大きさ変更 */
+}
+.social-box2{
+float: left; /* 要素を左揃えで並べる */
+}
+.social-box2:nth-child(even) {
+  margin: 0 20px; /* 2番目の箱の空白部分の位置変更 */
+}
+
+
 footer {
-  width: 100%;
-  height: 60px;
-  text-align: center;
-  padding: 50px 0;
-  background-color: #EC715F;
+  width: 100%; /* 横幅 */
+  background-color: #EC715F; /* 背景をピンクに変更 */
+  height: 60px;  /* 高さ */
+  text-align: center; /* 文字を真ん中に寄せる */
+  line-height: 4;
 }
 .footer-text {
-  font-size: 16px;
-  color: #FAFAFA;
+  font-size: 16px; /* 文字の大きさ変更 */
+  color: #FAFAFA; /* 文字色を白に変更 */
+}
+
+@media screen and (max-width:768px) {
+  header {
+    height: 50px; /* 高さ */
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  nav {
+    width: 90%; /* 横幅 */
+  }
+  .nav-image {
+    height: 50px; /* 高さ */
+  }
+  .nav-list {
+    display: none; /* リストの非表示 */
+  }
+  .hamburger {
+    display: block; /* メニューの表示 */
+    text-align: right; /* メニューの右寄せ */
+    padding: 3px 8px; /* 内側の余白でメニュー位置調整 */
+  }
+  .fa-white {
+    color: #FAFAFA; /* 文字色を白に変更 */
+  }
+  .fa-large3{
+    font-size: 45px; /* 文字の大きさ変更 */
+  }
+
+
+  .main-visual {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+    height: 750px; /* 高さ */
+    background-image: url(img/code.png); /* 背景画像の配置 */
+  }
+  .main-visual-content{
+    width: 90%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+    height: 750px; /* 高さ */
+  }
+  .main-visual-text {
+    font-size: 40px; /* 文字の大きさ変更 */
+  }
+  .main-visual-name{
+    font-size: 18px; /* 文字の大きさ変更 */
+  }
+
+
+  .portfolio {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .portfolio-all {
+    width: 90%; /* 横幅 */
+  }
+  .portfolio-box {
+    float: none; /* 要素の左揃えを解除 */
+  }
+  .portfolio-image1 {
+    display: none; /* 画像の非表示 */
+  }
+  .portfolio-image2 {
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .portfolio-image3 {
+    display: none; /* 画像の非表示 */
+  }
+  .portfolio-image4 {
+    margin: 10px auto; /* 箱の中央寄せ */
+  }
+  .portfolio-image5 {
+    display: none; /* 画像の非表示 */
+  }
+  .portfolio-image6 {
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+
+
+  .feature {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .feature-all {
+    width: 90%; /* 横幅 */
+  }
+  .feature-box {
+    width: 100%; /* 横幅 */
+    float: none; /* 要素の左揃えを解除 */
+  }
+  .feature-box:nth-child(even) {
+    margin: 0 auto; /* 箱の中央寄せ */
+    padding: 10px 0; /* 2番目の箱の空白部分の位置変更 */
+  }
+
+
+  .profile {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-all {
+    width: 90%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-box1 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-box2 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-text1 {
+    text-align: center;/* 文字を中央に寄せる */
+    padding: 20px 0 5px 0;/* 内側の余白で文字間の位置調整 */
+  }
+  .profile-text2 {
+    text-align: center; /* 文字を中央に寄せる */
+    padding: 20px 0 5px 0; /* 内側の余白で文字間の位置調整 */
+  }
+  .profile-text3 {
+    text-align: center; /* 文字を中央に寄せる */
+  }
+
+
+  .contact {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .contact-all {
+    width: 90%; /* 横幅 */
+  }
+  .contact-box1 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+  }
+  .contact-fix1 {
+    width: 130px; /* 横幅 */
+  }
+  .contact-text1 {
+    text-align: center;/* 文字を中央に寄せる */
+  }
+  .contact-text2 {
+    text-align: center;/* 文字を中央に寄せる */
+   }
+   .contact-text3 {
+   text-align: center;/* 文字を中央に寄せる */
+  }
+  .contact-box2 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .contact-fix2 {
+    width: 100%; /* 横幅 */
+    padding: 20px 0 0 0; /* 内側の余白で文字間の位置調整 */
+  }
+  .contact-case {
+    width: 34%; /* SNSの位置調整の横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .social-box2{
+    float: left; /* 要素を左揃えで並べる */
+  }
+  .social-box2:nth-child(even) {
+    margin: 0 8px; /* 2番目の箱の空白部分の位置変更 */
+  }
+
+
+  footer {
+  width: 100%; /* 横幅 */
+  margin: 0 auto; /* 箱の中央寄せ */
+  }
+}
+@media screen and (max-width:1024px) {
+  header {
+    height: 50px; /* 高さ */
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  nav {
+    width: 90%; /* 横幅 */
+  }
+  .nav-image {
+    height: 50px; /* 高さ */
+  }
+  .nav-list {
+    display: none; /* リストの非表示 */
+  }
+  .hamburger {
+    display: block; /* メニューの表示 */
+    text-align: right; /* メニューの右寄せ */
+    padding: 3px 8px; /* 内側の余白でメニュー位置調整 */
+  }
+  .fa-white {
+    color: #FAFAFA; /* 文字色を白に変更 */
+  }
+  .fa-large3{
+    font-size: 45px; /* 文字の大きさ変更 */
+  }
+
+
+  .main-visual {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+    height: 750px; /* 高さ */
+    background-image: url(img/code.png); /* 背景画像の配置 */
+  }
+  .main-visual-content{
+    width: 90%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+    height: 750px; /* 高さ */
+  }
+  .main-visual-text {
+    font-size: 40px; /* 文字の大きさ変更 */
+  }
+  .main-visual-name{
+    font-size: 18px; /* 文字の大きさ変更 */
+  }
+
+
+  .portfolio {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .portfolio-all {
+    width: 90%; /* 横幅 */
+  }
+  .portfolio-box {
+    float: none; /* 要素の左揃えを解除 */
+  }
+  .portfolio-image1 {
+    display: none; /* 画像の非表示 */
+  }
+  .portfolio-image2 {
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .portfolio-image3 {
+    display: none; /* 画像の非表示 */
+  }
+  .portfolio-image4 {
+    margin: 10px auto; /* 箱の中央寄せ */
+  }
+  .portfolio-image5 {
+    display: none; /* 画像の非表示 */
+  }
+  .portfolio-image6 {
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+
+
+  .feature {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .feature-all {
+    width: 90%; /* 横幅 */
+  }
+  .feature-box {
+    width: 100%; /* 横幅 */
+    float: none; /* 要素の左揃えを解除 */
+  }
+  .feature-box:nth-child(even) {
+    margin: 0 auto; /* 箱の中央寄せ */
+    padding: 10px 0; /* 2番目の箱の空白部分の位置変更 */
+  }
+
+
+  .profile {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-all {
+    width: 90%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-box1 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-box2 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .profile-text1 {
+    text-align: center;/* 文字を中央に寄せる */
+    padding: 20px 0 5px 0;/* 内側の余白で文字間の位置調整 */
+  }
+  .profile-text2 {
+    text-align: center; /* 文字を中央に寄せる */
+    padding: 20px 0 5px 0; /* 内側の余白で文字間の位置調整 */
+  }
+  .profile-text3 {
+    text-align: center; /* 文字を中央に寄せる */
+  }
+
+
+  .contact {
+    width: 100%; /* 横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .contact-all {
+    width: 90%; /* 横幅 */
+  }
+  .contact-box1 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+  }
+  .contact-fix1 {
+    width: 130px; /* 横幅 */
+  }
+  .contact-text1 {
+    text-align: center;/* 文字を中央に寄せる */
+  }
+  .contact-text2 {
+    text-align: center;/* 文字を中央に寄せる */
+   }
+   .contact-text3 {
+   text-align: center;/* 文字を中央に寄せる */
+  }
+  .contact-box2 {
+    width: 100%; /* 横幅 */
+    float:none; /* 要素の左揃えを解除 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .contact-fix2 {
+    width: 100%; /* 横幅 */
+    padding: 20px 0 0 0; /* 内側の余白で文字間の位置調整 */
+  }
+  .contact-case {
+    width: 34%; /* SNSの位置調整の横幅 */
+    margin: 0 auto; /* 箱の中央寄せ */
+  }
+  .social-box2{
+    float: left; /* 要素を左揃えで並べる */
+  }
+  .social-box2:nth-child(even) {
+    margin: 0 8px; /* 2番目の箱の空白部分の位置変更 */
+  }
+
+
+  footer {
+  width: 100%; /* 横幅 */
+  margin: 0 auto; /* 箱の中央寄せ */
+  }
 }
