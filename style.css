@@ -24,7 +24,8 @@ nav {
   height: 70px; /* 高さ */
 }
 .nav-list {
-  padding-top: 25px; /* 上に余白を作成 */
+  /*padding-top: 25px;  上に余白を作成 */
+  line-height: 4.5;
   text-align: right; /* 文字を右に寄せる */
 }
 .nav-list-item {
@@ -235,11 +236,20 @@ border-radius: 400px /* 画像を丸く表示させる */
   padding: 0 0 5px 0; /* 内側の余白で文字間の位置調整 */
 }
 .contact-text2 {
+  width: 105px;
   color: #000000; /* 文字色を黒に変更 */
   font-size: 16px; /* 文字の大きさ変更 */
   border-bottom: 1px solid; /* 文字に下線を引く */
   text-align: left; /* 文字を左に寄せる */
 }
+
+.contact-text2a {
+  color: #000000; /* 文字色を黒に変更 */
+  font-size: 16px; /* 文字の大きさ変更 */
+  border-bottom: 1px solid; /* 文字に下線を引く */
+  text-align: left; /* 文字を左に寄せる */
+}
+
 .contact-text3 {
   color: #000000; /* 文字色を黒に変更 */
   font-size: 20px; /* 文字の大きさ変更 */
@@ -423,26 +433,28 @@ footer {
     text-align: center;/* 文字を中央に寄せる */
   }
   .contact-text2 {
+    margin: 0 auto;
+    text-align: center;/* 文字を中央に寄せる */
+   }
+
+  .contact-text2 {
     text-align: center;/* 文字を中央に寄せる */
    }
    .contact-text3 {
-   text-align: center;/* 文字を中央に寄せる */
+    text-align: center;/* 文字を中央に寄せる */
   }
   .contact-box2 {
     width: 100%; /* 横幅 */
     float:none; /* 要素の左揃えを解除 */
     margin: 0 auto; /* 箱の中央寄せ */
   }
-  .contact-fix2 {
-    width: 100%; /* 横幅 */
-    padding: 20px 0 0 0; /* 内側の余白で文字間の位置調整 */
-  }
   .contact-case {
-    width: 34%; /* SNSの位置調整の横幅 */
-    margin: 0 auto; /* 箱の中央寄せ */
+    width:166px;/* アイコン調整のために横幅設定 */
+    margin: 0 auto;/* 箱の中央寄せ */
   }
   .social-box2{
-    float: left; /* 要素を左揃えで並べる */
+    width: 50px;/* 横幅 */
+    text-align: center;/* 文字を中央に寄せる */
   }
   .social-box2:nth-child(even) {
     margin: 0 8px; /* 2番目の箱の空白部分の位置変更 */
@@ -597,26 +609,28 @@ footer {
     text-align: center;/* 文字を中央に寄せる */
   }
   .contact-text2 {
+    margin: 0 auto;
+    text-align: center;/* 文字を中央に寄せる */
+   }
+
+  .contact-text2 {
     text-align: center;/* 文字を中央に寄せる */
    }
    .contact-text3 {
-   text-align: center;/* 文字を中央に寄せる */
+    text-align: center;/* 文字を中央に寄せる */
   }
   .contact-box2 {
     width: 100%; /* 横幅 */
     float:none; /* 要素の左揃えを解除 */
     margin: 0 auto; /* 箱の中央寄せ */
   }
-  .contact-fix2 {
-    width: 100%; /* 横幅 */
-    padding: 20px 0 0 0; /* 内側の余白で文字間の位置調整 */
-  }
   .contact-case {
-    width: 34%; /* SNSの位置調整の横幅 */
-    margin: 0 auto; /* 箱の中央寄せ */
+    width:166px;/* アイコン調整のために横幅設定 */
+    margin: 0 auto;/* 箱の中央寄せ */
   }
   .social-box2{
-    float: left; /* 要素を左揃えで並べる */
+    width: 50px;/* 横幅 */
+    text-align: center;/* 文字を中央に寄せる */
   }
   .social-box2:nth-child(even) {
     margin: 0 8px; /* 2番目の箱の空白部分の位置変更 */
