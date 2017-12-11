@@ -436,8 +436,7 @@ footer {
     margin: 0 auto;
     text-align: center;/* 文字を中央に寄せる */
    }
-
-  .contact-text2 {
+   .contact-text2 {
     text-align: center;/* 文字を中央に寄せる */
    }
    .contact-text3 {
@@ -455,6 +454,9 @@ footer {
   .social-box2{
     width: 50px;/* 横幅 */
     text-align: center;/* 文字を中央に寄せる */
+  }
+  .contact-fix2 {
+    padding: 20px 0 0 0; /* 内側の余白で文字間の位置調整 */
   }
   .social-box2:nth-child(even) {
     margin: 0 8px; /* 2番目の箱の空白部分の位置変更 */
@@ -612,8 +614,7 @@ footer {
     margin: 0 auto;
     text-align: center;/* 文字を中央に寄せる */
    }
-
-  .contact-text2 {
+   .contact-text2 {
     text-align: center;/* 文字を中央に寄せる */
    }
    .contact-text3 {
@@ -631,6 +632,9 @@ footer {
   .social-box2{
     width: 50px;/* 横幅 */
     text-align: center;/* 文字を中央に寄せる */
+  }
+  .contact-fix2 {
+    padding: 20px 0 0 0; /* 内側の余白で文字間の位置調整 */
   }
   .social-box2:nth-child(even) {
     margin: 0 8px; /* 2番目の箱の空白部分の位置変更 */
